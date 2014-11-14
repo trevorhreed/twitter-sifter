@@ -2,8 +2,16 @@
 <html>
 	<head>
 		<title>Hello World!</title>
+		<link href="/static/libs/bootstrap.min.css" />
+		<link href="/static/libs/bootstrap-theme.min.css" />
+		<link href="static/app.css" />
+		<script src="/static/libs/jquery.min.js"></script>
+		<script src="/static/libs/bootstrap.min.js"></script>
+		<script src="/static/libs/angular.min.js"></script>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<div ui-view></div>
+		<script>var app = angular.module('myapp', []);</script>
+		<script src="/static/app.js"></script>
 	</body>
 </html>
