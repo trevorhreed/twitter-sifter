@@ -1,0 +1,1 @@
+app.value('version', 'v0.1');
