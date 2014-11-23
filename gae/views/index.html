@@ -2,16 +2,16 @@
 <html ng-app="myapp">
 	<head>
 		<title>Twitter Sifter v0.1</title>
-		<link href="/static/libs/bootstrap.min.css" />
-		<link href="/static/libs/bootstrap-theme.min.css" />
-		<link href="static/styles.css" />
+		<link href="/static/libs/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="/static/libs/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+		<link href="/static/styles.css" rel="stylesheet" type="text/css" />
 		<script src="/static/libs/jquery.min.js"></script>
 		<script src="/static/libs/bootstrap.min.js"></script>
 		<script src="/static/libs/angular.min.js"></script>
 		<script src="/static/libs/angular-route.min.js"></script>
 	</head>
 	<body ng-controller="main">
-		<div ng-view></div>
+		<div ng-include="'layout'" class='reset'></div>
 		<script>var app = angular.module('myapp', ['ngRoute']);</script>
 		<script src="/static/app.debug.js"></script>
 	</body>

@@ -1,0 +1,11 @@
+<div class='wrapper'>
+	<div class='menu'>
+		<a ng-repeat='place in places' class='item' ng-href='{{place.url}}'>{{place.title}}</a>
+	</div>
+	<div class='content'>
+		<div ng-view="'home'"></div>
+		<div class='footer'>
+			legalese.
+		</div>
+	</div>
+</div>

@@ -34,7 +34,10 @@ module.exports = function(grunt){
 				src: '**/*.html',
 				dest: 'tmp/templates.js',
 				options: {
-					htmlmin: { collapseWhitespace: true }
+					htmlmin: { collapseWhitespace: true },
+					url: function(url){
+						return url.substr(url.lastIndexOf('/')+1).replace('.html', '');
+					}
 				}
 			}
 		},
