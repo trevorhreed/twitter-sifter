@@ -7,7 +7,7 @@ module.exports = function(grunt){
 				dest: '../gae/static/app.debug.js'
 			},
 			scss: {
-				src: ['../src/app.scss', '../src/**/*.scss'],
+				src: ['../src/styles.scss', '../src/**/*.scss'],
 				dest: 'tmp/styles.scss'
 			}
 		},

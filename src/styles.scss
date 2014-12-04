@@ -1,7 +1,6 @@
 $primary: #009874;
 
 html,body,.reset{padding:0px;margin:0px;height:100%;}
-h1{margin:1em 0em;}
 .wrapper{
 	margin:0em auto;
 	width:900px;
@@ -20,6 +19,8 @@ h1{margin:1em 0em;}
 		background-color: $primary;
 		
 		.item{
+			width:8em;
+			text-align:center;
 			cursor:pointer;
 			line-height:4em;
 			display:inline-block;
@@ -27,6 +28,10 @@ h1{margin:1em 0em;}
 			font-size:1.6em;
 			padding:0em 1em;
 			&:hover{
+				background-color:darken($primary, 10%);
+				text-decoration:none;
+			}
+			&.selected{
 				background-color:darken($primary, 8%);
 				text-decoration:none;
 			}

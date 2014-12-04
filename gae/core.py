@@ -12,6 +12,9 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 )
 
 class Endpoint(webapp2.RequestHandler):
+	def write(self, msg):
+		self.response.write(msg)
+	
 	def json(self, obj):
 		self.response.write(json.dumps(obj))
 	

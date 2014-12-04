@@ -7,5 +7,6 @@ class Index(core.Endpoint):
 
 app = webapp2.WSGIApplication([
     ('/', Index),
-		('/test', 'api.Test')
+		('/test', 'api.Test'),
+		('/api/crunch', 'api.Crunch')
 ], debug=True)

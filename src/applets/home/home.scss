@@ -1,0 +1,32 @@
+.applets-home{
+	
+  .alert{
+    text-align:center;
+  }
+  
+	.narrow{
+		width:50%;
+		margin:4em auto;
+		
+    [up-dropzone]{
+      cursor:pointer;
+    }
+		.dropzone-cover{
+      
+			background-color:#444;
+			color:#fff;
+			font-weight:bold;
+			padding:1.4em;
+      
+      transition: background-color 200ms;
+		}
+		
+		.drop-zone{
+			text-align:center;
+		}
+	}
+  
+  .data{
+    margin:4em 0em 4em;
+  }
+}

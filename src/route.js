@@ -16,8 +16,3 @@ app.config(['$routeProvider', function($routeProvider){
 }]);
 
 app.run(['$route', angular.noop]);
-
-
-app.controller('home', ['$scope', function($scope){
-	$scope.title = "Welcome Home";
-}]);

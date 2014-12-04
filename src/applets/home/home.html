@@ -1,6 +1,26 @@
-<h1>Home</h1>
-
-
-<form class='form'>
-	<input type='file' class='form-control' />
-</form>
+<div class='applets-home'>
+  <div class='alert alert-danger alert-dismissible' ng-show="error">
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+      <span class="sr-only">Close</span>
+    </button>
+    {{error}}
+  </div>
+	<div class='narrow'>
+    <div class='form-group'>
+      <select class='form-control' ng-model='filetype' ng-value="byuser">
+        <option value='bytweet'>Upload Tweet Excel File</option>
+        <option value='byuser'>Upload Top Tweeter Excel File</option>
+      </select>
+    </div>
+    <div id='dropzone' up-dropzone up-dropclass="dropzone-cover" up-ondrop="capture" class='well drop-zone'>
+      Drag a file here or click to upload.
+    </div>
+  </div>
+  <div class='data'>
+    <div class='well' ng-repeat="chart in charts">
+      <h3>{{chart.title}}</h3>
+      <div google-chart chart="chart"></div>
+    </div>
+  </div>
+</div>
