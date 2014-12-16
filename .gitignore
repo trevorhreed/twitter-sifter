@@ -54,3 +54,4 @@ docs/_build/
 target/
 
 scripts/bower_components/
+scripts/node_modules/
