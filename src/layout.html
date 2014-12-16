@@ -1,9 +1,9 @@
 <div class='wrapper'>
 	<div class='menu'>
-		<a ng-repeat='place in places' class='item' ng-class="{selected: place.selected}" ng-href='{{place.url}}'>{{place.title}}</a>
+		<a ng-repeat='place in places' class='item' ng-class="{selected: place.selected}" ng-href='{{place.url}}'>{{place.link}}</a>
 	</div>
 	<div class='content'>
-		<div class='page-header'><h1>{{title}}</h1></div>
+        <div class='page-header'><h1>{{title}}</h1></div>
 		<div ng-view="'home'"></div>
 		<div class='footer'>
 			<!-- legalese. -->

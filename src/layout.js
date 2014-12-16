@@ -2,15 +2,13 @@ app.controller('layout', ['$scope', '$location', function($scope, $location){
 	$scope.places = [
 		{
 			title: 'Analyze',
+            link: 'Analyze',
 			url: '#/'
 		},
 		{
-			title: 'About',
-			url: '#/about'
-		},
-		{
-			title: 'Test',
-			url: '#/test'
+			title: 'Tweeting the Discipline',
+            link: 'About',
+			url: '#/tweeting-the-discipline'
 		}
 	];
 	

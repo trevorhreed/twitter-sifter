@@ -39,6 +39,40 @@ html,body,.reset{padding:0px;margin:0px;height:100%;}
 	}
 	
 }
+.applets-about{
+    
+    authors{
+        display:block;
+        margin:2em 0em;
+        
+        author{
+            display:block;
+            line-height:2em;
+        }
+    }
+    
+    figure{
+        margin:3em;
+        
+        img{
+            max-width:100%;
+        }
+        p{
+            margin-top:1em;
+            font-weight:bold;
+        }
+    }
+    
+    h3{
+        margin:4em 0em 1em;
+    }
+    citation{
+        display:block;
+        line-height:2em;
+        text-indent:-3em;
+        margin-left:3em;
+    }
+}
 .applets-home{
 	
   .alert{

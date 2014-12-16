@@ -4,13 +4,9 @@ app.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'home',
 			controller: 'home'
 		})
-		.when('/about', {
+		.when('/tweeting-the-discipline', {
 			templateUrl: 'about',
 			controller: 'about'
-		})
-		.when('/test', {
-			templateUrl: 'test',
-			controller: 'test'
 		})
 		.otherwise({redirectTo: '/'});
 }]);
